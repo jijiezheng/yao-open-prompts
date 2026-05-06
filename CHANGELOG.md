@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- 将网页导航提升到 README 标题下第一行，作为仓库首页明显入口。
 - 新增 `docs/index.html`，展示提示词类型与代表提示词，并支持 GitHub Pages 发布。
 - 仓库更名为 `yao-open-prompts`，README 同步更新为 `Yao Open Prompts`。
 - 从原始合集拆分出独立提示词文件。
