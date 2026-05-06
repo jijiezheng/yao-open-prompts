@@ -6,6 +6,8 @@
 
 本仓库从原始合集文档中拆分出 **100** 个独立提示词文件，并按场景重新分类。每个提示词保留可复制的正文，去除了原文中不适合放入开源仓库主体的教程推广、效果截图、视频附件说明和 HTML 样式残留。
 
+网页导航：https://yaojingang.github.io/yao-open-prompts/
+
 ## 仓库结构
 
 ```text
@@ -14,6 +16,7 @@ references/             # 推荐资源、第三方内容和外部项目索引
 templates/              # 新增提示词模板
 maintenance/            # 维护、评审、发布检查清单
 scripts/                # 目录生成和仓库质量检查脚本
+docs/                   # 提示词类型与代表提示词网页
 CATALOG.md              # 全量提示词索引
 CHANGELOG.md            # 更新记录
 CONTRIBUTING.md         # 贡献和持续迭代规则
@@ -67,6 +70,7 @@ tags: 标签列表
 - 调整分类：同步更新 frontmatter 的 `category/subcategory/tags`，然后重新生成目录。
 - 质量检查：运行 `python3 scripts/check_repo.py`。
 - 重建目录：运行 `python3 scripts/generate_catalog.py`。
+- 重建网页：运行 `python3 scripts/generate_webpage.py`。
 - 发布节奏：建议使用日期版本，如 `v2026.05.1`，每次发布前走 [release-checklist.md](maintenance/release-checklist.md)。
 
 ## 开源与来源策略

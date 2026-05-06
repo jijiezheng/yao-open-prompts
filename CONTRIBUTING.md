@@ -11,6 +11,7 @@
 ```bash
 python3 scripts/check_repo.py
 python3 scripts/generate_catalog.py
+python3 scripts/generate_webpage.py
 ```
 
 ## 版本规则
