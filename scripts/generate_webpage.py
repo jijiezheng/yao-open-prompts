@@ -88,8 +88,8 @@ REPRESENTATIVE_SLUGS = {
         "title-alchemist-content",
         "sora2-character-video-ideas",
         "cut-everything-video-generator",
-        "nano-banana-01",
-        "nano-banana-ppt-05",
+        "nano-banana",
+        "nano-banana-ppt",
         "sanmao-style-memoir-generator",
     ],
     "AI编程": [
@@ -682,7 +682,7 @@ def build_html(prompts: list[Prompt]) -> str:
       <div class="hero-grid">
         <div>
           <h1>提示词类型与代表提示词导航</h1>
-          <p>从当前开源库中抽取 9 类提示词结构，展示每类的用途、规模和代表样例。适合快速了解仓库内容，也适合作为后续迭代时的分类入口。</p>
+          <p>从当前开源库中抽取 9 类提示词结构，展示每类的用途、规模和代表样例。系列型提示词已收拢为合集文件，例如 Nano Banana 和 Nano Banana PPT，方便浏览、复制和持续维护。</p>
           <div class="hero-actions">
             <a class="button" href="#AI方法">查看类型</a>
             <a class="button secondary" href="{REPO_URL}/blob/main/CATALOG.md" target="_blank" rel="noreferrer">完整目录</a>

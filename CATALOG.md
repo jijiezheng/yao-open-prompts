@@ -1,6 +1,6 @@
 # 提示词目录
 
-当前共拆分出 **100** 个提示词文件。
+当前共拆分出 **42** 个提示词文件。
 
 ## 分类统计
 
@@ -11,7 +11,7 @@
 | AI学习 | 10 | 学习方法、记忆术、习惯养成和学习助理。 |
 | AI生活 | 2 | 健康、亲子歌曲等生活场景。 |
 | AI教育 | 3 | 儿童教育和小游戏创作。 |
-| AI内容 | 68 | 写作、标题、视频、图像和 PPT 创意。 |
+| AI内容 | 10 | 写作、标题、视频、图像和 PPT 创意。 |
 | AI编程 | 1 | 架构设计和编程协作。 |
 | AI营销 | 2 | GEO 内容生成、改写和营销增长。 |
 | AI思考 | 2 | 记忆、标题和思维类灵感提示词。 |
@@ -52,66 +52,8 @@
 | AI内容 | 写作 | [AI写作自然化提示词 V2.0](prompts/06-ai-content/humanized-writing/humanized-writing-v2.md) | active | 写作 |
 | AI内容 | 写作 | [知识库AI写作法](prompts/06-ai-content/knowledge-base-writing-rebuilder.md) | active | 知识库 |
 | AI内容 | 写作 | [医疗科普文章生成提示词](prompts/06-ai-content/medical-popular-science-article-generator.md) | active | 医疗科普 |
-| AI内容 | Nano Banana | [Nano Banana 01：CPU核心](prompts/06-ai-content/nano-banana/nano-banana-01.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 02：液态金属](prompts/06-ai-content/nano-banana/nano-banana-02.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 03：霓虹蓝图](prompts/06-ai-content/nano-banana/nano-banana-03.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 04：纳米虫群](prompts/06-ai-content/nano-banana/nano-banana-04.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 05：能量胶囊](prompts/06-ai-content/nano-banana/nano-banana-05.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 06：蒸汽朋克](prompts/06-ai-content/nano-banana/nano-banana-06.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 07：光纤传输](prompts/06-ai-content/nano-banana/nano-banana-07.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 08：故障艺术](prompts/06-ai-content/nano-banana/nano-banana-08.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 09：碳纤维](prompts/06-ai-content/nano-banana/nano-banana-09.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 10：维修工](prompts/06-ai-content/nano-banana/nano-banana-10.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 11：细胞结构](prompts/06-ai-content/nano-banana/nano-banana-11.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 12：露珠世界](prompts/06-ai-content/nano-banana/nano-banana-12.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 13：蚂蚁的负重](prompts/06-ai-content/nano-banana/nano-banana-13.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 14：花粉颗粒](prompts/06-ai-content/nano-banana/nano-banana-14.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 15：菌丝网络](prompts/06-ai-content/nano-banana/nano-banana-15.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 16：雪花中心](prompts/06-ai-content/nano-banana/nano-banana-16.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 17：深海生物](prompts/06-ai-content/nano-banana/nano-banana-17.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 18：蝴蝶鳞片](prompts/06-ai-content/nano-banana/nano-banana-18.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 19：培养皿](prompts/06-ai-content/nano-banana/nano-banana-19.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 20：蒲公英种子](prompts/06-ai-content/nano-banana/nano-banana-20.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 21：钻石切割](prompts/06-ai-content/nano-banana/nano-banana-21.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 22：Q弹软糖](prompts/06-ai-content/nano-banana/nano-banana-22.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 23：熔岩冷却](prompts/06-ai-content/nano-banana/nano-banana-23.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 24：气凝胶](prompts/06-ai-content/nano-banana/nano-banana-24.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 25：折纸艺术](prompts/06-ai-content/nano-banana/nano-banana-25.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 26：金缮修复](prompts/06-ai-content/nano-banana/nano-banana-26.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 27：肥皂泡](prompts/06-ai-content/nano-banana/nano-banana-27.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 28：Vantablack](prompts/06-ai-content/nano-banana/nano-banana-28.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 29：毛线编织](prompts/06-ai-content/nano-banana/nano-banana-29.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 30：磁流体](prompts/06-ai-content/nano-banana/nano-banana-30.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 31：指纹山脉](prompts/06-ai-content/nano-banana/nano-banana-31.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 32：针眼穿梭](prompts/06-ai-content/nano-banana/nano-banana-32.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 33：黑胶唱片](prompts/06-ai-content/nano-banana/nano-banana-33.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 34：方糖之上](prompts/06-ai-content/nano-banana/nano-banana-34.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 35：键盘之下](prompts/06-ai-content/nano-banana/nano-banana-35.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 36：火柴头](prompts/06-ai-content/nano-banana/nano-banana-36.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 37：牛仔布线](prompts/06-ai-content/nano-banana/nano-banana-37.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 38：芯片城市](prompts/06-ai-content/nano-banana/nano-banana-38.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 39：盐粒对比](prompts/06-ai-content/nano-banana/nano-banana-39.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 40：瞳孔倒影](prompts/06-ai-content/nano-banana/nano-banana-40.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 41：乐高积木](prompts/06-ai-content/nano-banana/nano-banana-41.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 42：体素艺术](prompts/06-ai-content/nano-banana/nano-banana-42.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 43：表情爆炸](prompts/06-ai-content/nano-banana/nano-banana-43.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 44：气球动物](prompts/06-ai-content/nano-banana/nano-banana-44.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 45：太空漫步](prompts/06-ai-content/nano-banana/nano-banana-45.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 46：糖果包装](prompts/06-ai-content/nano-banana/nano-banana-46.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 47：沙粒涂鸦](prompts/06-ai-content/nano-banana/nano-banana-47.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 48：拿铁拉花](prompts/06-ai-content/nano-banana/nano-banana-48.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 49：扭蛋玩具](prompts/06-ai-content/nano-banana/nano-banana-49.md) | active | Nano Banana |
-| AI内容 | Nano Banana | [Nano Banana 50：加载进度](prompts/06-ai-content/nano-banana/nano-banana-50.md) | active | Nano Banana |
-| AI内容 | Nano Banana PPT | [Nano Banana PPT 01：通识/创意类课程 (The Creative Class)](prompts/06-ai-content/nano-banana-ppt/nano-banana-ppt-01.md) | active | Nano Banana |
-| AI内容 | Nano Banana PPT | [Nano Banana PPT 02：科技/硬核知识分享 (Tech Knowledge Share)](prompts/06-ai-content/nano-banana-ppt/nano-banana-ppt-02.md) | active | Nano Banana |
-| AI内容 | Nano Banana PPT | [Nano Banana PPT 03：年度战略发布 (Annual Strategy)](prompts/06-ai-content/nano-banana-ppt/nano-banana-ppt-03.md) | active | Nano Banana |
-| AI内容 | Nano Banana PPT | [Nano Banana PPT 04：企业文化/概况 (Company Profile)](prompts/06-ai-content/nano-banana-ppt/nano-banana-ppt-04.md) | active | Nano Banana |
-| AI内容 | Nano Banana PPT | [Nano Banana PPT 05：财务/业绩分析 (Financial Performance)](prompts/06-ai-content/nano-banana-ppt/nano-banana-ppt-05.md) | active | Nano Banana |
-| AI内容 | Nano Banana PPT | [Nano Banana PPT 06：市场份额/竞品对比 (Market Analysis)](prompts/06-ai-content/nano-banana-ppt/nano-banana-ppt-06.md) | active | Nano Banana |
-| AI内容 | Nano Banana PPT | [Nano Banana PPT 07：项目进度同步 (Project Progress)](prompts/06-ai-content/nano-banana-ppt/nano-banana-ppt-07.md) | active | Nano Banana |
-| AI内容 | Nano Banana PPT | [Nano Banana PPT 08：个人工作复盘 (Personal Review)](prompts/06-ai-content/nano-banana-ppt/nano-banana-ppt-08.md) | active | Nano Banana |
-| AI内容 | Nano Banana PPT | [Nano Banana PPT 09：B2B 解决方案提案 (B2B Solution)](prompts/06-ai-content/nano-banana-ppt/nano-banana-ppt-09.md) | active | Nano Banana |
-| AI内容 | Nano Banana PPT | [Nano Banana PPT 10：消费品/电商营销案 (Consumer Marketing)](prompts/06-ai-content/nano-banana-ppt/nano-banana-ppt-10.md) | active | Nano Banana |
+| AI内容 | Nano Banana PPT | [Nano Banana PPT 场景提示词合集](prompts/06-ai-content/nano-banana-ppt.md) | active | Nano Banana |
+| AI内容 | Nano Banana | [50个 Nano Banana 创意提示词](prompts/06-ai-content/nano-banana.md) | active | Nano Banana |
 | AI内容 | 仿写 | [三毛风格回忆录生成器](prompts/06-ai-content/sanmao-style-memoir-generator.md) | active | 仿写 |
 | AI内容 | 视频创意 | [Sora2主人公视频创意生成器](prompts/06-ai-content/sora2-character-video-ideas.md) | active | Sora2 |
 | AI内容 | 标题 | [标题炼金术师（内容创作版）](prompts/06-ai-content/title-alchemist-content.md) | active | 标题 |
