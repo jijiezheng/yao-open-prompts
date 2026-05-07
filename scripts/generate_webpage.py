@@ -33,7 +33,7 @@ CATEGORY_DESCRIPTIONS = {
     "AI学习": "学习方法、记忆术、费曼提问、习惯养成",
     "AI生活": "健康、亲子、生活创作",
     "AI教育": "儿童教育、互动学习页面、小游戏生成、教学活动",
-    "AI内容": "写作、润色、标题、公众号HTML、视频、图像、PPT创意",
+    "AI内容": "写作、润色、标题、公众号HTML、短视频、AI精准智能体、图像",
     "AI编程": "架构设计、系统方案、开发协作",
     "AI营销": "GEO文章生成、Schema.org结构化数据、AI搜索优化",
     "AI思考": "批判思维、记忆宫殿、标题灵感、思维工具",
@@ -91,6 +91,12 @@ REPRESENTATIVE_SLUGS = {
         "child-game-shark-fish",
     ],
     "AI内容": [
+        "aijingzhun-01-hook-opening-copy",
+        "aijingzhun-04-spoken-viral-script",
+        "aijingzhun-11-topic-planner",
+        "aijingzhun-13-douyin-viral-planner",
+        "aijingzhun-30-xiaohongshu-graphic-expert",
+        "aijingzhun-35-content-data-review-diagnostician",
         "humanized-writing-v2",
         "humanized-writing-polish-v3",
         "knowledge-base-writing-rebuilder",
@@ -120,6 +126,16 @@ REPRESENTATIVE_SLUGS = {
 
 FEATURED_SLUGS = [
     "rtf-meta-prompt-system-v06",
+]
+
+COLLECTIONS = [
+    {
+        "kicker": "专题入口",
+        "title": "AI精准 36 个提示词 V2.1",
+        "description": "从 AIJingzhun 产品提示词包拆分出的 36 个智能体，覆盖短视频文案、人设风格、平台专精、行业垂直、直播转化、私域成交、AI绘画、数据复盘和爆款重构。",
+        "href": f"{REPO_URL}/blob/main/prompts/06-ai-content/aijingzhun-36-agents/README.md",
+        "meta": "36 agents",
+    },
 ]
 
 
@@ -271,6 +287,31 @@ def build_featured(prompts: list[Prompt]) -> str:
     """
 
 
+def build_collections() -> str:
+    cards = []
+    for item in COLLECTIONS:
+        cards.append(
+            f"""
+            <article class="collection-card">
+              <div>
+                <span class="collection-kicker">{escape(item["kicker"])}</span>
+                <h2>{escape(item["title"])}</h2>
+                <p>{escape(item["description"])}</p>
+              </div>
+              <div class="collection-action">
+                <strong>{escape(item["meta"])}</strong>
+                <a class="button secondary" href="{escape(item["href"])}" target="_blank" rel="noreferrer">进入合集</a>
+              </div>
+            </article>
+            """
+        )
+    return f"""
+    <section class="collections" aria-label="专题合集入口">
+      {''.join(cards)}
+    </section>
+    """
+
+
 def build_sections(prompts: list[Prompt]) -> str:
     by_slug = {prompt.slug: prompt for prompt in prompts}
     sections = []
@@ -307,6 +348,7 @@ def build_html(prompts: list[Prompt]) -> str:
     total = len(prompts)
     representative_count = sum(len(slugs) for slugs in REPRESENTATIVE_SLUGS.values())
     featured_section = build_featured(prompts)
+    collections_section = build_collections()
     return f"""<!doctype html>
 <html lang="zh-CN">
 <head>
@@ -522,6 +564,59 @@ def build_html(prompts: list[Prompt]) -> str:
     .featured-side strong {{
       font-size: 42px;
       line-height: 1;
+    }}
+    .collections {{
+      padding: 0 0 22px;
+    }}
+    .collection-card {{
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 220px;
+      gap: 22px;
+      align-items: stretch;
+      padding: 22px;
+      border: 1px solid #fecaca;
+      border-left: 4px solid #dc2626;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }}
+    .collection-kicker {{
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      padding: 0 9px;
+      border-radius: 999px;
+      background: #fef2f2;
+      color: #b91c1c;
+      font-size: 13px;
+      font-weight: 760;
+    }}
+    .collection-card h2 {{
+      margin: 14px 0 10px;
+      font-size: clamp(23px, 3vw, 34px);
+      line-height: 1.15;
+      letter-spacing: 0;
+    }}
+    .collection-card p {{
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.72;
+    }}
+    .collection-action {{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px;
+      border-radius: 8px;
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+    }}
+    .collection-action strong {{
+      font-size: 30px;
+      line-height: 1;
+      color: #9a3412;
     }}
     .type-map {{
       display: grid;
@@ -750,6 +845,9 @@ def build_html(prompts: list[Prompt]) -> str:
       .featured-card {{
         grid-template-columns: 1fr;
       }}
+      .collection-card {{
+        grid-template-columns: 1fr;
+      }}
     }}
     @media (max-width: 680px) {{
       .topbar .shell {{
@@ -793,7 +891,7 @@ def build_html(prompts: list[Prompt]) -> str:
       <div class="hero-grid">
         <div>
           <h1>提示词类型与代表提示词导航</h1>
-          <p>从当前开源库中抽取 9 类提示词结构，展示每类的用途、规模和代表样例。当前重点推荐「智能元提示词生成系统 V0.6」，它是基于 RTF 框架生成高质量提示词的通用起点；系列型提示词继续收拢为合集文件，方便浏览、复制和持续维护。</p>
+          <p>从当前开源库中抽取 9 类提示词结构，展示每类的用途、规模和代表样例。当前重点推荐「智能元提示词生成系统 V0.6」，并新增「AI精准 36 个提示词 V2.1」专题入口；系列型提示词继续收拢为合集文件，方便浏览、复制和持续维护。</p>
           <div class="hero-actions">
             <a class="button" href="#AI方法">查看类型</a>
             <a class="button secondary" href="{REPO_URL}/blob/main/CATALOG.md" target="_blank" rel="noreferrer">完整目录</a>
@@ -816,6 +914,8 @@ def build_html(prompts: list[Prompt]) -> str:
     </section>
 
     {featured_section}
+
+    {collections_section}
 
     <section class="overview" aria-label="提示词类型总览">
       <div class="type-map">
